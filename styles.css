@@ -1,3 +1,23 @@
+/* Hero görseli ve overlay için özel stiller */
+.hero.hero-image {
+    background: url('https://raw.githubusercontent.com/hakkurgithub/images/main/sesa-yag-hero.png') center center/cover no-repeat;
+    min-height: 480px;
+    position: relative;
+}
+.hero.hero-image .hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero.hero-image .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44,62,80,0.25);
+    z-index: 1;
+    pointer-events: none;
+}
 /* Genel Stiller */
 * {
     margin: 0;
